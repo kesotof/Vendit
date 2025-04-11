@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header id="main-header">
@@ -23,7 +24,7 @@
                     <li><a href="#Planes">Planes</a></li>
                 </ul>
                 <div class="contact-button-container">
-                    <a href="prueba.html" class="contact-button">Contáctenos</a>
+                    <a href="#hablanos" class="contact-button">Contáctenos</a>
                 </div>
             </div>
         </nav>
@@ -345,6 +346,77 @@
             </div> 
         </section> 
     </section>
+    <section id="hablanos">
+        <section class="vendit-contact-section">
+            <div class="vendit-contact-container">
+                <div class="vendit-contact-grid">
+
+                    <div class="vendit-contact-form-col">
+                        <h2>¡Hablemos!</h2>
+                        <p>Siempre disponibles para convertir tus proyectos en éxitos. Todo comienza con un mensaje tuyo:</p>
+
+                        <form action="#" method="POST" class="vendit-contact-form">
+                            <div class="vendit-form-group">
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido o Razón Social *" required>
+                            </div>
+                            <div class="vendit-form-group">
+                                <input type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                            </div>
+                            <div class="vendit-form-group">
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required>
+                            </div>
+                            <div class="vendit-form-group">
+                                <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+                            </div>
+                            <div class="vendit-form-group">
+                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="vendit-contact-submit-btn">Enviar Formulario</button>
+                        </form>
+                    </div>
+
+                    <div class="vendit-contact-image-col">
+                        <img src="image/a3.png" alt="contacto" class="vendit-contact-illustration">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="vendit-main-footer">
+        <div class="vendit-footer-container">
+            <div class="vendit-footer-grid">
+
+                <div class="vendit-footer-col vendit-footer-col--services">
+                    <h5 class="vendit-footer-title">Servicios</h5>
+                    <ul class="vendit-footer-links">
+                        <li><a href="#">Paginas Web</a></li>
+                        <li><a href="#">Planes y Precios Web</a></li>
+                        <li><a href="#">Posicionamiento</a></li>
+                        <li><a href="">Registros Dominios</a></li>
+                    </ul>
+                </div>
+
+                <div class="vendit-footer-col vendit-footer-col--hours">
+                    <h5 class="vendit-footer-title">Horarios</h5>
+                    <p>Nuestro horario de atención es de Lunes a Viernes de 14:00 a 19:00.</p>
+                </div>
+
+                <div class="vendit-footer-col vendit-footer-col--contact">
+                    <h5 class="vendit-footer-title">Contactos</h5>
+                    <div class="vendit-contact-item">
+                        <span class="icon">✉️</span>
+                        <a href="mailto:ventas@tupagina.cl">vendit@duoc.cl</a>
+                    </div>
+                    <div class="vendit-contact-item">
+                         <span class="icon">📞</span>
+                        <a href="tel:+56998091872">+56 9 9809 1872</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/index.js"></script>
     <script src="js/scroll.js"> </script>
     

@@ -777,3 +777,150 @@ span.palabra-destacada {
          min-height: auto;
      }
 }
+
+.vendit-contact-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vendit-contact-section {
+    padding: 60px 0;
+}
+
+.vendit-contact-grid {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vendit-contact-form-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.vendit-contact-form-col h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #212529;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.vendit-contact-form-col p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.vendit-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.vendit-contact-form input[type="text"],
+.vendit-contact-form input[type="email"],
+.vendit-contact-form input[type="tel"],
+.vendit-contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vendit-contact-form ::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.vendit-contact-form input:focus,
+.vendit-contact-form textarea:focus {
+    outline: none;
+    border-color: #E63946;
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+.vendit-contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.vendit-contact-submit-btn {
+    background-color: #E63946;
+    color: #ffffff;
+    border: none;
+    padding: 14px 35px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.vendit-contact-submit-btn:hover {
+    background-color: #c12f3b;
+    transform: translateY(-2px);
+}
+
+.vendit-contact-image-col {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    background-color: #FFF5F5;
+    padding: 40px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.vendit-contact-illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .vendit-contact-grid {
+        gap: 30px;
+    }
+     .vendit-contact-form-col h2 {
+         font-size: 2.5rem;
+     }
+}
+
+@media (max-width: 768px) {
+    .vendit-contact-section {
+        padding: 40px 0;
+    }
+    .vendit-contact-grid {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .vendit-contact-form-col,
+    .vendit-contact-image-col {
+        flex: none;
+        width: 100%;
+    }
+    .vendit-contact-form-col h2 {
+        font-size: 2.2rem;
+         text-align: center;
+    }
+     .vendit-contact-form-col p {
+         text-align: center;
+     }
+     .vendit-contact-submit-btn {
+          align-self: center;
+     }
+    .vendit-contact-image-col {
+         padding: 30px;
+    }
+}

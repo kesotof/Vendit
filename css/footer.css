@@ -1,0 +1,114 @@
+.vendit-main-footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.vendit-footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vendit-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.vendit-footer-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #495057;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.vendit-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vendit-footer-links li {
+    margin-bottom: 12px;
+}
+
+.vendit-footer-links a {
+    color: #ced4da;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.vendit-footer-links a::before {
+    content: '→';
+    margin-right: 10px;
+    color: #E63946;
+    display: inline-block;
+}
+
+.vendit-footer-links a:hover {
+    color: #ffffff;
+}
+
+.vendit-footer-col--hours p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #adb5bd;
+    margin: 0;
+}
+
+.vendit-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.vendit-contact-item .icon {
+    font-size: 1.3rem;
+    margin-right: 12px;
+    min-width: 25px;
+    text-align: center;
+    line-height: 1;
+    color: #E63946;
+}
+
+.vendit-contact-item a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-break: break-word;
+}
+
+.vendit-contact-item a:hover {
+    color: #E63946;
+
+}
+
+@media (max-width: 992px) {
+    .vendit-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+     .vendit-footer-col--contact {
+         grid-column: 1 / -1;
+         margin-top: 20px;
+     }
+}
+
+@media (max-width: 768px) {
+    .vendit-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+     .vendit-footer-col--contact {
+         margin-top: 0;
+     }
+}
