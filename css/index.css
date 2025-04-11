@@ -247,3 +247,95 @@ header.scrolled .nav-list a.active {
    }
 }
 
+/* Estilos para la sección Nosotros */
+.welcome-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.welcome-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15%;
+  height: 70%;
+  width: 5px;
+  background-color: #ff0000;
+}
+
+.service-wrapper {
+  height: 100%;
+  padding: 15px;
+}
+
+.welcome-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 40px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s ease;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.welcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #ff0000;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.welcome-card p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.welcome-link {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+.welcome-link:hover {
+  color: #ff3333;
+}
+
+.welcome-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff0000;
+  transition: width 0.3s ease;
+}
+
+.welcome-link:hover:after {
+  width: 100%;
+}
