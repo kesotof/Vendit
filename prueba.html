@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header con Efecto Scroll</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header transparente que se convierte en blanco */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        
+        header.scrolled {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar {
+            padding: 15px 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        header.scrolled .navbar-brand {
+            color: #333;
+        }
+        
+        /* Para el área de la imagen de portada */
+        .slide {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Sección nosotros */
+        #nosotros {
+            padding: 80px 20px;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+        }
+        
+        /* Para visualizar mejor el contenido */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/api/placeholder/30/24" alt="Logo" width="30" height="24">
+                    Mi Sitio
+                </a>
+                <!-- Aquí podrías agregar un menú de navegación si lo necesitas -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide">
+        <img src="image/" alt="portada">
+    </div>
+    
+    <section id="nosotros">
+        <div class="content">
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris euismod, nisi vel tincidunt ultricies, nunc nisl aliquam nunc, vel aliquam nisl nunc vel nunc. Nulla facilisi. Mauris euismod, nisi vel tincidunt ultricies, nunc nisl aliquam nunc, vel aliquam nisl nunc vel nunc.</p>
+            <p>Mauris euismod, nisi vel tincidunt ultricies, nunc nisl aliquam nunc, vel aliquam nisl nunc vel nunc. Nulla facilisi. Mauris euismod, nisi vel tincidunt ultricies, nunc nisl aliquam nunc, vel aliquam nisl nunc vel nunc.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris euismod, nisi vel tincidunt ultricies, nunc nisl aliquam nunc, vel aliquam nisl nunc vel nunc.</p>
+        </div>
+    </section>
+
+    <script>
+        // Detectar cuando el usuario hace scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            const nosotrosSection = document.getElementById('nosotros');
+            const nosotrosPosition = nosotrosSection.getBoundingClientRect().top;
+            
+            // Si la sección "nosotros" está cerca de la parte superior de la ventana,
+            // aplicamos la clase para cambiar el color del header
+            if (nosotrosPosition <= 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

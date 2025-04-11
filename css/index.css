@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-right: auto;
+  margin-left: -300px;
+}
+
+.navbar-brand img {
+  height: 55px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 0.5;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-right: -50px;
+  position: relative;
+  right: -140px;
+}
+
+.nav-list a {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.904);
+  text-decoration: none;
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ff0000;
+}
+
+.nav-list a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0000;
+}
+
+header.scrolled .nav-list a:hover {
+  color: #ff0000;
+}
+
+.contact-button-container {
+  margin-left: 0px;
+  position: relative;
+  right: -250px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff0000;
+  color: white;
+  border-color: #ff0000;
+}
+
+header.scrolled .navbar-brand {
+  color: #333;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px) brightness(0.8);
+}
+
+.slide-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 70%;
+  max-width: 800px;
+  text-align: left;
+  background-color: transparent;
+  padding: 0;
+}
+
+#typing-effect {
+  color: #F5F5F5;
+  font-size: clamp(2.5em, 7vw, 6em);
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+  display: inline-block;
+  min-height: 1.1em;
+
+}
+
+#typing-effect::after {
+  content: '█';
+  display: inline-block;
+  margin-left: clamp(5px, 1.5vw, 15px);
+  animation: blink 1s infinite step-start;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+header.scrolled .contact-button:hover {
+  background-color: #ff0000;
+  color: white;
+  border-color: #ff0000;
+}
+
+header.scrolled .contact-button {
+  font-weight: bold;
+  color: #333;
+  border-color: #333;
+}
+
+header.scrolled .nav-list a{
+  font-weight: bold;
+  color: #333;
+  border-color: #333;
+}
+
+.nav-list a.active {
+  color: #ff0000;
+}
+
+.nav-list a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0000;
+}
+
+header.scrolled .nav-list a.active {
+  color: #ff0000;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#typing-effect.finished::after {
+  animation: none;
+  opacity: 1;
+  content: '.';
+}
+
+@media (max-width: 768px) {
+  .slide-text-overlay {
+    left: 8%;
+    width: 85%;
+  }
+  #typing-effect {
+     font-size: clamp(2em, 7vw, 4.5em);
+     line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-button-container {
+    margin-left: 10px;
+  }
+  
+  .contact-button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+   .slide-text-overlay {
+     left: 5%;
+     width: 90%;
+   }
+   #typing-effect {
+     font-size: clamp(1.8em, 8vw, 3.5em);
+     line-height: 1.3;
+   }
+   #typing-effect::after {
+      margin-left: 5px;
+   }
+}
+
