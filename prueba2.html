@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseños Elegantes</title>
+
+    <style>
+        .mi-seccion-disenos {
+            display: flex;
+            align-items: center;
+            padding: 50px 30px;
+            background-color: #f8f9fa;
+            max-width: 1300px;
+            margin: 40px auto;
+            gap: 40px;
+            font-family: Arial, sans-serif;
+            overflow: hidden; 
+        }
+
+        .mi-contenido-texto-disenos {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .mi-titulo-disenos {
+            font-size: 2.8em;
+            color: #212529;
+            margin-bottom: 20px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        span.mi-palabra-destacada {
+            color: #0d6efd;
+        }
+
+
+        .mi-descripcion-disenos {
+            font-size: 1.1em;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .mi-galeria-imagenes-disenos {
+            flex: 1.5; 
+            position: relative;
+            min-height: 580px;
+        }
+
+        .mi-imagen-plantilla-diseno {
+            position: absolute;
+            max-width: 240px;
+            height: auto;
+            border: 1px solid #dee2e6;
+            box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+        }
+
+        .plantilla-1 {
+            top: 100px;
+            left: 5%;
+            transform: rotate(-5deg);
+            z-index: 2;
+            max-width: 200px;
+        }
+
+        .plantilla-2 {
+            top: 90px;
+            left: 40%;
+            transform: rotate(5deg);
+            z-index: 5;
+            max-width: 240px;
+        }
+
+        .plantilla-3 {
+            top: 90px;
+            left: 25%;
+            transform: rotate(3deg);
+            z-index: 3;
+            max-width: 220px;
+        }
+
+        @media (max-width: 992px) {
+            .mi-seccion-disenos {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .mi-contenido-texto-disenos {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .mi-galeria-imagenes-disenos {
+                min-height: 500px;
+                width: 100%;
+            }
+
+             .plantilla-1 { left: 5%; top: 10px; max-width: 180px; }
+             .plantilla-2 { left: 45%; top: 0px; max-width: 200px;}
+             .plantilla-3 { left: 8%; top: 150px; max-width: 160px;}
+
+        }
+
+        @media (max-width: 576px) {
+            .mi-titulo-disenos {
+                font-size: 2em;
+            }
+            .mi-descripcion-disenos {
+                font-size: 1em;
+            }
+            .mi-galeria-imagenes-disenos {
+                min-height: 400px;
+            }
+            .mi-imagen-plantilla-diseno {
+                max-width: 150px;
+                box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+            }
+             .plantilla-1 { left: 2%; top: 5px; max-width: 130px;}
+             .plantilla-2 { left: 48%; top: 0px; max-width: 150px;}
+             .plantilla-3 { left: 5%; top: 120px; max-width: 120px;}
+        }
+    </style>
+</head>
+<body>
+
+<section class="mi-seccion-disenos">
+    <div class="mi-contenido-texto-disenos">
+        <h2 class="mi-titulo-disenos">Elegantes <span class="mi-palabra-destacada">diseños</span> para tu página web</h2>
+        <p class="mi-descripcion-disenos">
+            Elige uno de nuestros diseños y nosotros lo armamos con tu información para ti,
+            incorporando tus contenidos, colores e ideas en tu sitio web. Contamos con
+            diferentes modelos ajustables a las necesidades de cada negocio.
+        </p>
+    </div>
+    <div class="mi-galeria-imagenes-disenos">
+        <img src="image/image.png" alt="pagina2" class="mi-imagen-plantilla-diseno plantilla-1">
+        <img src="image/image.png" alt="pagina2" class="mi-imagen-plantilla-diseno plantilla-2">
+        <img src="image/image.png" alt="pagina3" class="mi-imagen-plantilla-diseno plantilla-3">
+    </div>
+</section>
+
+</body>
+</html>

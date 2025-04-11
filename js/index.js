@@ -47,3 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeChar, initialDelay);
     });
 });
+
+const featureCards = document.querySelectorAll('.fxs-card');
+        featureCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('fxs-card--is-hovered');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('fxs-card--is-hovered');
+            });
+        });

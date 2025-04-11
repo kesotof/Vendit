@@ -9,11 +9,10 @@ window.addEventListener('scroll', function() {
     }
 
     const sections = ['hero', 'nosotros', 'diseno', 'tienda', 'Portafolio'];
-    
 
     let currentSectionId = null;
     const windowHeight = window.innerHeight;
-    
+
     for (const sectionId of sections) {
         const section = document.getElementById(sectionId);
         if (!section) continue;
