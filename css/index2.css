@@ -79,3 +79,129 @@
 .fxs-card.fxs-card--is-hovered .fxs-card-top-line {
     opacity: 1;
 }
+
+
+.seccion-disenos {
+    display: flex;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #f8f9fa;
+    max-width: 100%;
+    width: 100%;
+    margin: 40px 0;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+}
+
+.contenido-texto-disenos {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 200px;
+}
+
+.titulo-disenos {
+    font-size: 2.8em;
+    color: #212529;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+span.palabra-destacada {
+    color: #e91c01;
+}
+
+
+.descripcion-disenos {
+    font-size: 1.1em;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.galeria-imagenes-disenos {
+    flex: 1.5; 
+    position: relative;
+    min-height: 580px;
+}
+
+.imagen-plantilla-diseno {
+    position: absolute;
+    max-width: 240px;
+    height: auto;
+    border: 1px solid #dee2e6;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plantilla-1 {
+    top: 100px;
+    left: 10%;
+    transform: rotate(-5deg);
+    z-index: 2;
+    max-width: 200px;
+}
+
+.plantilla-2 {
+    top: 90px;
+    left: 40%;
+    transform: rotate(5deg);
+    z-index: 5;
+    max-width: 240px;
+}
+
+.plantilla-3 {
+    top: 90px;
+    left: 25%;
+    transform: rotate(3deg);
+    z-index: 3;
+    max-width: 220px;
+}
+
+@media (max-width: 992px) {
+    .seccion-disenos {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .contenido-texto-disenos {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .galeria-imagenes-disenos {
+        min-height: 500px;
+        width: 100%;
+    }
+
+     .plantilla-1 { left: 5%; top: 10px; max-width: 180px; }
+     .plantilla-2 { left: 45%; top: 0px; max-width: 200px;}
+     .plantilla-3 { left: 8%; top: 150px; max-width: 160px;}
+
+}
+
+@media (max-width: 576px) {
+    .titulo-disenos {
+        font-size: 2em;
+    }
+    .descripcion-disenos {
+        font-size: 1em;
+    }
+    .galeria-imagenes-disenos {
+        min-height: 400px;
+    }
+    .imagen-plantilla-diseno {
+        max-width: 150px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+     .plantilla-1 { left: 2%; top: 5px; max-width: 130px;}
+     .plantilla-2 { left: 48%; top: 0px; max-width: 150px;}
+     .plantilla-3 { left: 5%; top: 120px; max-width: 120px;}
+}
