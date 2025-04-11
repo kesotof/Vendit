@@ -108,6 +108,7 @@
     line-height: 1.2;
 }
 
+
 span.palabra-destacada {
     color: #e91c01;
 }
@@ -204,4 +205,381 @@ span.palabra-destacada {
      .plantilla-1 { left: 2%; top: 5px; max-width: 130px;}
      .plantilla-2 { left: 48%; top: 0px; max-width: 150px;}
      .plantilla-3 { left: 5%; top: 120px; max-width: 120px;}
+}
+
+.about-content{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.titulo-servicio {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.vendit-about-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.vendit-about-image-area {
+    flex: 1;
+    position: relative;
+    min-height: 500px;
+    background-color: #e9ecef;
+}
+.vendit-about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.vendit-about-content-area {
+    flex: 1;
+    padding: 50px 40px;
+}
+.vendit-about-content-area h1 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #222;
+}
+ .vendit-about-content-area h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #222;
+}
+.vendit-about-content-area p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1rem;
+}
+.vendit-about-wave-emoji {
+    font-size: 2.8rem;
+    animation: vendit-about-wave-animation 1.5s infinite;
+    display: inline-block;
+    transform-origin: 70% 70%;
+    margin-left: 5px;
+}
+@keyframes vendit-about-wave-animation {
+    0%, 100% { transform: rotate(0deg); } 10% { transform: rotate(14deg); } 20% { transform: rotate(-8deg); } 30% { transform: rotate(14deg); } 40% { transform: rotate(-4deg); } 50% { transform: rotate(10deg); } 60% { transform: rotate(0deg); }
+}
+.vendit-about-content-area strong {
+    font-weight: bold;
+    color: red;
+}
+
+.vendit-about-mv-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.vendit-about-mission-col,
+.vendit-about-vision-col {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.vendit-about-mission-col h2,
+.vendit-about-vision-col h2 {
+    color: #222;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.vendit-about-mission-col p,
+.vendit-about-vision-col p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+.vendit-about-mission-col:hover,
+.vendit-about-vision-col:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#f61b10), to(#ef0963));
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(230, 57, 70, 0.3);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+.vendit-about-mission-col:hover h2,
+.vendit-about-vision-col:hover h2,
+.vendit-about-mission-col:hover p,
+.vendit-about-vision-col:hover p {
+    color: #ffffff;
+}
+
+@media (max-width: 992px) {
+     .vendit-about-container {
+         flex-direction: column;
+         margin: 30px auto;
+     }
+      .vendit-about-image-area {
+         min-height: 350px;
+     }
+     .vendit-about-content-area {
+         padding: 40px 30px;
+     }
+}
+
+@media (max-width: 768px) {
+     .vendit-about-content-area h1 {
+         font-size: 2.2rem;
+     }
+     .vendit-about-mv-wrapper {
+         flex-direction: column;
+         gap: 20px;
+     }
+}
+
+ @media (max-width: 576px) {
+      .vendit-about-image-area {
+         min-height: 250px;
+     }
+      .vendit-about-content-area {
+         padding: 30px 20px;
+     }
+      .vendit-about-content-area h1 {
+         font-size: 2rem;
+     }
+      .vendit-about-mission-col h2,
+      .vendit-about-vision-col h2 {
+          font-size: 1.3rem;
+      }
+       .vendit-about-mission-col p,
+       .vendit-about-vision-col p {
+           font-size: 0.9rem;
+       }
+ }
+
+ .vendit-svcs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vendit-svcs-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.vendit-svcs-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #212529;
+}
+
+.vendit-svcs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.vendit-svcs-card {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: background-image 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+.vendit-svcs-icon {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1;
+    transition: color 0.4s ease;
+}
+
+.vendit-svcs-card h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    transition: color 0.4s ease;
+}
+
+.vendit-svcs-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0;
+    transition: color 0.4s ease;
+}
+
+.vendit-svcs-card:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#f61b10), to(#ef0963));
+    background-image: linear-gradient(to right, #f61b10, #ef0963);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(239, 9, 99, 0.3);
+}
+
+.vendit-svcs-card:hover .vendit-svcs-icon,
+.vendit-svcs-card:hover h3,
+.vendit-svcs-card:hover p {
+    color: #ffffff;
+}
+
+
+@media (max-width: 992px) {
+    .vendit-svcs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+     .vendit-svcs-section h2 {
+         font-size: 2.2rem;
+     }
+}
+
+@media (max-width: 768px) {
+    .vendit-svcs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+     .vendit-svcs-section h2 {
+         font-size: 2rem;
+         margin-bottom: 30px;
+    }
+     .vendit-svcs-card {
+         padding: 30px 25px;
+     }
+      .vendit-svcs-icon {
+         font-size: 2.5rem;
+         margin-bottom: 15px;
+     }
+     .vendit-svcs-card h3 {
+         font-size: 1.3rem;
+     }
+}
+
+.vendit-extra-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vendit-extra-section {
+    padding: 60px 0;
+}
+
+.vendit-extra-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.vendit-extra-col-intro h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.vendit-extra-col-intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.vendit-extra-divider {
+    width: 50px;
+    height: 4px;
+    background-color: #E63946;
+    border: none;
+    margin: 0;
+}
+
+.vendit-extra-service-image {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 25px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.vendit-extra-col-service h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.vendit-extra-col-service p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .vendit-extra-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .vendit-extra-col-intro h2 {
+        font-size: 2.5rem;
+    }
+     .vendit-extra-service-image {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 300px;
+         height: 130px;
+     }
+     .vendit-extra-col-service {
+          text-align: center;
+     }
+     .vendit-extra-divider {
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 20px;
+     }
+}
+
+@media (max-width: 768px) {
+    .vendit-extra-section {
+        padding: 40px 0;
+    }
+    .vendit-extra-col-intro h2 {
+        font-size: 2.2rem;
+    }
+     .vendit-extra-col-service h3 {
+        font-size: 1.3rem;
+     }
+     .vendit-extra-service-image {
+         max-width: 250px;
+         height: 110px;
+     }
 }
