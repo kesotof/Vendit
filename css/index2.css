@@ -583,3 +583,197 @@ span.palabra-destacada {
          height: 110px;
      }
 }
+
+.vendit-pricing-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vendit-pricing-section {
+    padding: 40px 0 60px 0;
+}
+
+.vendit-pricing-header-bar {
+    background-color: #3a86ff;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vendit-pricing-header-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.vendit-pricing-header-badge {
+    background-color: #ffffff;
+    color: #3a86ff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vendit-pricing-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vendit-pricing-intro h2 {
+    font-size: 2.2rem;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.vendit-pricing-intro p {
+    font-size: 1rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.vendit-pricing-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.vendit-pricing-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 280px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vendit-pricing-card-header {
+    padding: 20px 25px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.vendit-pricing-card-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.vendit-pricing-card-body {
+    padding: 25px 30px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.vendit-pricing-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.vendit-pricing-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    min-height: 65px;
+}
+
+.vendit-pricing-renewal-subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.vendit-pricing-features {
+    font-size: 0.85rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.feature-icon {
+    margin-right: 10px;
+    width: 22px;
+    text-align: center;
+    color: #555;
+}
+
+.feature-text {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.vendit-pricing-card--basic { border-color: #61c7ff; }
+.vendit-pricing-card--basic .vendit-pricing-card-header { background-color: #61c7ff; }
+.vendit-pricing-card--basic .vendit-pricing-renewal-subtitle { color: #0077cc; }
+
+.vendit-pricing-card--premium { border-color: #e63946; }
+.vendit-pricing-card--premium .vendit-pricing-card-header { background-color: #e63946; }
+.vendit-pricing-card--premium .vendit-pricing-renewal-subtitle { color: #e63946; }
+
+.vendit-pricing-card--gold { border-color: #ffb703; }
+.vendit-pricing-card--gold .vendit-pricing-card-header { background-color: #ffb703; }
+.vendit-pricing-card--gold .vendit-pricing-renewal-subtitle { color: #fca311; }
+
+@media (max-width: 992px) {
+    .vendit-pricing-cards-wrapper {
+        gap: 25px;
+    }
+    .vendit-pricing-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+     .vendit-pricing-header-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+         text-align: center;
+    }
+    .vendit-pricing-intro h2 {
+        font-size: 1.8rem;
+    }
+    .vendit-pricing-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .vendit-pricing-card {
+        flex: none;
+        width: 90%;
+        max-width: 350px;
+    }
+    .vendit-pricing-description {
+         min-height: auto;
+     }
+}

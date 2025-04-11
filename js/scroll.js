@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 
-    const sections = ['hero', 'nosotros', 'diseno', 'servicios', 'Portafolio'];
+    const sections = ['hero', 'nosotros', 'diseno', 'servicios', 'Planes'];
 
     let currentSectionId = null;
     const windowHeight = window.innerHeight;
