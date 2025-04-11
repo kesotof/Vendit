@@ -20,3 +20,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setTimeout(typeChar, 500);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const paragraphsToAnimate = document.querySelectorAll('.service-box p');
+    const typingSpeed = 70;
+    const initialDelay = 500;
+
+    if (paragraphsToAnimate.length === 0) {
+        console.warn("No se encontraron párrafos dentro de '.service-box' para aplicar el efecto.");
+        return;
+    }
+
+    paragraphsToAnimate.forEach(paragraphElement => {
+        const fullText = paragraphElement.textContent;
+        let charIndex = 0;
+        paragraphElement.textContent = '';
+        function typeChar() {
+            if (charIndex < fullText.length) {
+                paragraphElement.textContent += fullText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeChar, typingSpeed);
+            } else {
+                paragraphElement.classList.add('finished');
+            }
+        }
+        setTimeout(typeChar, initialDelay);
+    });
+});
